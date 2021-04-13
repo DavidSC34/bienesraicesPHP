@@ -11,7 +11,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header <?php echo isset($inicio) ? 'inicio' : ''; ?>">
         <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="/">
@@ -24,10 +24,10 @@
                 <div class="derecha">
                     <img src="build/img/dark-mode.svg" class="dark-mode-boton">
                     <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">contacto</a>
+                        <a href="nosotros.php">Nosotros</a>
+                        <a href="anuncios.php">Anuncios</a>
+                        <a href="blog.php">Blog</a>
+                        <a href="contacto.php">contacto</a>
                     </nav>
                 </div>
             </div>
@@ -35,23 +35,3 @@
 
         </div>
     </header>
-    <main class="contenendor seccion">
-        <h1>Base</h1>
-    </main>
-
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los derechos Reservados 2021 &copy;</p>
-    </footer>
-
-    <script src="build/js/bundle.min.js"></script>
-</body>
-
-</html>
